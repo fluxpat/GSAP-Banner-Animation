@@ -10,6 +10,7 @@ tl.addLabel("cp2", "2")
 tl.addLabel("cp2.5", "2.5")
 tl.addLabel("cp3", "3")
 tl.addLabel("cp3.5", "3.5")
+tl.addLabel("cp4", "4")
 tl.addLabel("cp6", "6")
 tl.addLabel("cp7", "7")
 tl.addLabel("cp10", "10")
@@ -32,8 +33,8 @@ tl.to('.shapes', { duration: 2, rotation: -180 }, "cp2")
     .to('#red-shape', { duration: 2, rotation: -210 }, "cp2")
     // Had to adjust to start at a smaller scale as animation wasn't accurate (could have planned this better)
     .fromTo('.shapes', 0.5, { scale: 0.5 }, { scale: 3, ease: "power1.out" }, "cp2")
-    .to('.shapes', { duration: 1, scale: 9, ease: "back.in(2)" }, "cp2.5")
-    .to('#mask-shape', { duration: 0.1, opacity: 0 }, "cp3.5")
+    .to('.shapes', { duration: 1.5, scale: 9, ease: "back.in(2)" }, "cp2.5")
+    .to('#mask-shape', { duration: 0.1, opacity: 0 }, "cp4")
 
 // Video begins to play in the BG
 tl.set('#video-el', { opacity: 1, onStart: function () { video.play() } }, "cp2")
@@ -44,7 +45,7 @@ tl.to('.text1', { duration: 1, opacity: 1 }, "cp3")
     .to('.text2', { duration: 1, opacity: 1 }, "cp7")
     .to('.text2', { duration: 0.5, opacity: 0 }, "cp10")
 // Bubbles cross-fade
-tl.from('#white-shape', { duration: 1.5, opacity: 0 }, "cp3")
+tl.from('#white-shape', { duration: 1, opacity: 0 }, "cp3.5")
     .to('#blue-shape', { duration: 1, opacity: 0 }, "cp3")
 
 // Another spin of White and Red bubbles
