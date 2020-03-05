@@ -58,7 +58,7 @@ p {
     top: 50vh;
     margin: -250px -300px;
     overflow: hidden;
-    /* border: 2px solid black; */
+    clip-path: inset(0);
 }
 
 .container {
