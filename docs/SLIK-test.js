@@ -1,4 +1,6 @@
-let tl = new TimelineMax({ onComplete: function () { this.restart() } })
+let tl = new TimelineMax(
+    { onComplete: function () { this.restart() } }
+)
 
 let video = document.getElementById("video-el")
 
