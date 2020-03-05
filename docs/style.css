@@ -56,12 +56,9 @@ p {
     position: relative;
     left: 50vw;
     top: 50vh;
-    margin: -250px -300px;
+    margin:  -250px -300px;
     overflow: hidden;
     clip-path: inset(0);
-}
-
-.container {
 }
 
 /* --------------------------------------- Spinning Loader -------------------------------------- */
